@@ -28,7 +28,7 @@
 		components: {
 			Card3,
 			Card2,
-			Card1,
+			Card1
 		},
 		mounted() {
 			this.calcCardMarginTop();
@@ -81,6 +81,7 @@
 	.c1 {
 		position: absolute;
 		border-radius: 15px;
+		border: 2px solid white;
 		box-shadow: 10px 10px 50px 10px #1b1b1b;
 		left: 20%;
 		height: 50%;
@@ -92,6 +93,7 @@
 	.c2 {
 		position: absolute;
 		border-radius: 15px;
+		border: 2px solid black;
 		box-shadow: 10px 10px 50px 10px #292929;
 		left: 20%;
 		height: 50%;
@@ -103,6 +105,7 @@
 	.c3 {
 		position: absolute;
 		border-radius: 15px;
+		border: 2px solid white;
 		box-shadow: 10px 10px 50px 10px #1b1b1b;
 		left: 20%;
 		height: 50%;

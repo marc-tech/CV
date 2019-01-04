@@ -9,7 +9,8 @@
 			<div class="col-8">
 				<div class="content">
 					<h1>Marc NALPAS</h1>
-					<h3>EPITECH Student 2015-2020</h3>
+					<h3>Full stack developer</h3>
+					<h5><a href="mailto:marc.nalpas@epitech.eu">marc.nalpas@epitech.eu</a></h5>
 				</div>
 			</div>
 		</div>
