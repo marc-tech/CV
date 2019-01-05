@@ -1,5 +1,5 @@
 <template>
-	<div class="card2">
+	<div class="card2 container">
 		<h1>Skills</h1>
 		<div class="row">
 
@@ -7,35 +7,42 @@
 				<h2>HTML, CSS</h2>
 			</div>
 			<div class="col-6">
-				<VueStarRating read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" rating="4.5"/>
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="4.5"/>
 			</div>
 
 			<div class="col-6">
 				<h2>JS, NodeJS</h2>
 			</div>
 			<div class="col-6">
-				<VueStarRating read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" rating="4"/>
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="4"/>
+			</div>
+
+			<div class="col-6">
+				<h2>PHP</h2>
+			</div>
+			<div class="col-6">
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="3.5"/>
 			</div>
 
 			<div class="col-6">
 				<h2>SQL, NOSQL</h2>
 			</div>
 			<div class="col-6">
-				<VueStarRating read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" rating="3.5"/>
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="3.5"/>
 			</div>
 
 			<div class="col-6">
 				<h2>C, C++, C#</h2>
 			</div>
 			<div class="col-6">
-				<VueStarRating read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" rating="3"/>
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="3"/>
 			</div>
 
 			<div class="col-6">
 				<h2>Java</h2>
 			</div>
 			<div class="col-6">
-				<VueStarRating read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" rating="3"/>
+				<VueStarRating :read-only="readOnly" :show-rating="showRating" :star-size="starSize" :increment="increment" :rating="3"/>
 			</div>
 
 		</div>
@@ -67,5 +74,15 @@
 	.card2 {
 		height: 100%;
 		width: 100%;
+	}
+
+	@media (max-width: 900px) {
+		.vue-star-rating-star {
+			width: 20px!important;
+		}
+
+		.vue-star-rating {
+			margin-left: 5px;
+		}
 	}
 </style>

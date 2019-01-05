@@ -1,5 +1,7 @@
 <template>
-
+	<div class="card3 container">
+		<h1>Experience</h1>
+	</div>
 </template>
 
 <script>
@@ -8,6 +10,8 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+	.card3 {
 
+	}
 </style>
