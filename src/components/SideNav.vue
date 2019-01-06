@@ -31,18 +31,20 @@
 
 <style lang="scss">
 	.SideNav {
+		bottom: 0;
 		z-index: 99;
 		position: fixed;
 		right: 0;
 		top: 42%;
 
 		.links {
+			margin: 0;
 			list-style-type: none;
 			min-width: 100px;
 
 			li {
 				cursor: pointer;
-				opacity: 0.4;
+				opacity: 0.8;
 				position: relative;
 				padding-right: 40px;
 				padding-top: 5px;
@@ -50,7 +52,7 @@
 				font-size: 18px;
 				height: 33px;
 				width: 164px;
-				color: #6d6d6d;
+				color: grey;
 
 				i {
 					padding-right: 3px;
@@ -64,7 +66,10 @@
 					padding-top: 0px;
 					padding-bottom: 0px;
 					opacity: 1;
-					font-size: 22px;
+
+					p {
+						font-size: 22px;
+					}
 
 					i {
 						font-size: 16px;
@@ -75,21 +80,32 @@
 
 		@media (max-width: 900px) {
 			width: 100%;
-			bottom: 5px;
 			left: 0;
 			top: auto;
 
 			.links {
+				background: white;
 				padding: 0;
 				display: flex;
 				justify-content: center;
 
 				li {
-					color: white;
+					color: grey;
 					padding-right: 5px !important;
 
 					i {
 						display: none;
+					}
+
+					&:hover {
+						padding-top: 5px;
+						padding-bottom: 0px;
+						opacity: 1;
+						color: black;
+
+						p {
+							font-size: 17px !important;
+						}
 					}
 				}
 			}

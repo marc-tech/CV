@@ -93,7 +93,7 @@
 			text-align: center;
 
 			@media only screen and (max-width: 768px) {
-				font-size: 8px;
+				font-size: 9px;
 				margin-top: 3px;
 			}
 		}

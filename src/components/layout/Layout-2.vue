@@ -1,9 +1,8 @@
 <template>
 	<div class="layout2" id="#layout2">
-		<particles name="pafs"></particles>
 		<img class="js-logo" src="img/js-logo.png">
 		<img class="html-logo" src="img/html-logo.png">
-		<img class="css-logo" src="img/css-logo.png">
+		<img class="css-logo" src="img/css-logo.jpg">
 		<img class="docker-logo" src="img/docker-logo.png">
 		<img class="npm-logo" src="img/npm-logo.png">
 		<img class="react-logo" src="img/react-logo.png">
@@ -50,9 +49,9 @@
 		}
 
 		.css-logo {
-			width: 8%;
+			width: 6%;
 			position: absolute;
-			top: 22%;
+			top: 24%;
 			left: 0px;
 			transform: rotate(356deg);
 		}

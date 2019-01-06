@@ -1,6 +1,6 @@
 <template>
 	<div class="layout1" id="#layout1">
-		<!--<Particles name="particle1"/>-->
+		<Particles name="particle1"/>
 		<Card-1/>
 	</div>
 </template>
