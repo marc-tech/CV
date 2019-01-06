@@ -1,15 +1,15 @@
 <template>
 	<div class="SideNav">
 		<ul class="links">
-			<li v-on:click="scrollTo('#card1')">
+			<li v-on:click="scrollTo('#layout1')">
 				<p>Profile</p>
 				<i class="far fa-circle"></i>
 			</li>
-			<li v-on:click="scrollTo('#card2')">
+			<li v-on:click="scrollTo('#layout2')">
 				<p>Skills</p>
 				<i class="far fa-circle"></i>
 			</li>
-			<li v-on:click="scrollTo('#card3')">
+			<li v-on:click="scrollTo('#layout3')">
 				<p>Experience</p>
 				<i class="far fa-circle"></i>
 			</li>
@@ -65,8 +65,31 @@
 					padding-bottom: 0px;
 					opacity: 1;
 					font-size: 22px;
+
 					i {
 						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 900px) {
+			width: 100%;
+			bottom: 5px;
+			left: 0;
+			top: auto;
+
+			.links {
+				padding: 0;
+				display: flex;
+				justify-content: center;
+
+				li {
+					color: white;
+					padding-right: 5px !important;
+
+					i {
+						display: none;
 					}
 				}
 			}

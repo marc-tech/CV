@@ -1,12 +1,12 @@
 <template>
-	<div class="card1 container">
+	<div class="card1">
 		<div class="row h-100 align-items-center">
-			<div class="col-lg-4 col-md-12">
+			<div class="col-sm-12 col-md-5">
 				<div class="avatar">
-					<img src="avatar.jpg">
+					<img src="img/avatar.jpg">
 				</div>
 			</div>
-			<div class="col-lg-8 col-md-12">
+			<div class="col-sm-12 col-md-7 col-lg-5">
 				<div class="content">
 					<h1>Marc NALPAS</h1>
 					<h3>Full stack developer</h3>
@@ -89,10 +89,10 @@
 		}
 
 		.binary {
-			color: #939393;
+			color: #4d4d4d;
 			text-align: center;
 
-			@media only screen and (max-width : 768px) {
+			@media only screen and (max-width: 768px) {
 				font-size: 8px;
 				margin-top: 3px;
 			}
