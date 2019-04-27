@@ -1,5 +1,6 @@
 <template>
-	<div :id="name" class="h-100"></div>
+	<div :id="name" class="h-100 w-100">
+	</div>
 </template>
 
 <script>
@@ -14,10 +15,10 @@
 			particlesJS(this.name, {
 				"particles": {
 					"number": {
-						"value": 88,
+						"value": 400,
 						"density": {
 							"enable": true,
-							"value_area": 700
+							"value_area": 1000
 						}
 					},
 					"color": {
@@ -34,22 +35,22 @@
 						}
 					},
 					"opacity": {
-						"value": 0.5,
+						"value": 1,
 						"random": false,
 						"anim": {
 							"enable": false,
 							"speed": 1.5,
-							"opacity_min": 0.15,
+							"opacity_min": 1,
 							"sync": false
 						}
 					},
 					"size": {
-						"value": 2.5,
+						"value": 3,
 						"random": false,
 						"anim": {
 							"enable": true,
 							"speed": 2,
-							"size_min": 0.15,
+							"size_min": 1,
 							"sync": false
 						}
 					},
@@ -62,7 +63,7 @@
 					},
 					"move": {
 						"enable": true,
-						"speed": 1.6,
+						"speed": 3,
 						"direction": "none",
 						"random": false,
 						"straight": false,
@@ -79,12 +80,12 @@
 					"detect_on": "canvas",
 					"events": {
 						"onhover": {
-							"enable": false,
-							"mode": "repulse"
+							"enable": true,
+							"mode": "bubble"
 						},
 						"onclick": {
-							"enable": false,
-							"mode": "push"
+							"enable": true,
+							"mode": "repulse"
 						},
 						"resize": true
 					},
@@ -96,14 +97,14 @@
 							}
 						},
 						"bubble": {
-							"distance": 400,
-							"size": 40,
+							"distance": 300,
+							"size": 10,
 							"duration": 2,
 							"opacity": 8,
 							"speed": 3
 						},
 						"repulse": {
-							"distance": 200,
+							"distance": 120,
 							"duration": 0.4
 						},
 						"push": {
