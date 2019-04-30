@@ -4,18 +4,33 @@
 </template>
 
 <script>
+	import "particles.js"
+
 	export default {
 		name: "Particles",
 		props: {
 			name: {
 				required: true
+			},
+			pause: {
+				default: false
+			}
+		},
+		watch: {
+			pause() {
+				if (this.pause) {
+					window.pJSDom[0].pJS.particles.move.enable = false;
+				} else {
+					window.pJSDom[0].pJS.particles.move.enable = true;
+					window.pJSDom[0].pJS.fn.particlesRefresh();
+				}
 			}
 		},
 		mounted() {
 			particlesJS(this.name, {
 				"particles": {
 					"number": {
-						"value": 400,
+						"value": 200,
 						"density": {
 							"enable": true,
 							"value_area": 1000
@@ -49,21 +64,21 @@
 						"random": false,
 						"anim": {
 							"enable": true,
-							"speed": 2,
+							"speed": 1,
 							"size_min": 1,
 							"sync": false
 						}
 					},
 					"line_linked": {
 						"enable": true,
-						"distance": 110,
+						"distance": 150,
 						"color": "#33b1f8",
 						"opacity": 0.25,
 						"width": 1
 					},
 					"move": {
 						"enable": true,
-						"speed": 3,
+						"speed": 1.5,
 						"direction": "none",
 						"random": false,
 						"straight": false,
@@ -84,7 +99,7 @@
 							"mode": "bubble"
 						},
 						"onclick": {
-							"enable": true,
+							"enable": false,
 							"mode": "repulse"
 						},
 						"resize": true

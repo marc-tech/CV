@@ -1,13 +1,13 @@
 <template>
     <div class="home h-100" :class="{hide: !show}">
         <div class="home-content">
-            <img src="/img/avatar.jpg" alt="profile image" class="home-content--avatar shadow-lg">
+            <img src="/img/avatar1.jpg" alt="profile image" class="home-content--avatar shadow-lg">
             <h1>Marc NALPAS</h1>
             <h3>Full Stack Lead Developer</h3>
             <button class="btn btn-primary mt-4" @click="hideHome">Get started</button>
         </div>
 
-        <Particles name="home-particles" class="home-particles"/>
+        <Particles :pause="!show" name="home-particles" class="home-particles"/>
     </div>
 </template>
 
@@ -64,8 +64,11 @@
             z-index: 1;
 
             &--avatar {
+                object-fit: cover;
+                object-position: top;
                 border-radius: 50%;
                 width: 200px;
+                height: 200px;
             }
 
             h1 {

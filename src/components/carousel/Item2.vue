@@ -1,0 +1,113 @@
+<template>
+    <div class="card">
+        <div class="text-center m-auto">
+            <h2 style="text-decoration: underline" class="mb-4"><strong>Skills</strong></h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>HTML, CSS</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>JS</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>VueJs</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>NodeJs</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>ReactJs</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>PHP</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="4" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>SQL, NOSQL</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>C, C++, C#</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>Python</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>Java</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                        <div class="col-6">
+                            <h4>Ruby</h4>
+                        </div>
+                        <div class="col-6">
+                            <VueStarRating :increment="increment" :rating="3" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+  import VueStarRating from "vue-star-rating";
+
+  export default {
+    name: "Item2",
+    components: {VueStarRating},
+    data() {
+      return {
+        showRating: false,
+        readOnly: true,
+        starSize: 25,
+        increment: 0.5
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+    .vue-star-rating {
+        justify-content: center;
+    }
+</style>

@@ -1,20 +1,4 @@
-$cardWidth: 60%;
-$cardHeight: 55%;
-$cardTop: 22%;
-$cardLeft: 20%;
-$cardWidthMobile: 80%;
-$cardHeightMobile: 70%;
-$cardTopMobile: 15%;
-$cardLeftMobile: 10%;
-$cardBorderRadius: 20px;
 
-$BackgroundFirstColor: white;
-$BackgroundSecondColor: black;
-$cardFirstColor: #090400;
-$cardSecondColor: white;
-
-$cardTextFirstColor: #323840;
-$cardTextSecondColor: black;
 
 body, html {
 	scroll-behavior: smooth;
@@ -54,8 +38,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 	p {
 		font-size: 13px;
 	}
+}
 
-	a, span, li, strong {
-		font-size: 14px;
-	}
+.card {
+	overflow: auto;
+	padding: 15px 15px 40px 15px;
+	border-radius: 30px !important;
+	background: #e6e6e6 !important;
+	margin: 0 auto;
+	height: 80vh;
+	width: 75vw;
+}
+
+.m-auto {
+	margin: auto;
 }
