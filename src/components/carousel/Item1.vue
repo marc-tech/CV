@@ -37,9 +37,13 @@
 
 <style lang="scss">
 	.contact-card {
-		padding: 30px;
+		padding: 40px;
 		background: rgba(255, 255, 255, 0.6);
 		width: 100%;
+
+		@media (max-width: 800px) {
+			padding: 15px 7px;
+		}
 
 		.title {
 			max-width: 1000px;

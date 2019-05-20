@@ -7,25 +7,25 @@
 			<div class="h-75 d-flex align-items-center">
 				<Item1/>
 			</div>
-			<div class="w-100 text-center text-white">
+			<div class="icon w-100 text-center text-white">
 				<i @click="scrollNext" class="fas fa-4x fa-arrow-circle-down"></i>
 			</div>
 		</div>
 
 		<div class="bg bg2 w-100 h-100">
-			<div class="w-100 text-center text-white">
+			<div class="icon w-100 text-center text-white">
 				<i @click="scrollPrev" class="fas fa-4x fa-arrow-circle-up"></i>
 			</div>
 			<div>
 				<Item2/>
 			</div>
-			<div class="w-100 text-center text-white">
+			<div class="icon w-100 text-center text-white">
 				<i @click="scrollNext" class="fas fa-4x fa-arrow-circle-down"></i>
 			</div>
 		</div>
 
 		<div class="bg bg3 w-100 h-100">
-			<div class="w-100 text-white text-center pt-4">
+			<div class="icon w-100 text-white text-center pt-4">
 				<i @click="scrollPrev" class="fas fa-4x fa-arrow-circle-up"></i>
 			</div>
 			<div class="h-75 d-flex align-items-center">
@@ -104,6 +104,16 @@
 		position: absolute;
 		top: 0;
 		z-index: 1;
+
+		.icon {
+			cursor: pointer;
+		}
+
+		@media (max-width: 500px) {
+			.icon {
+				font-size: 10px !important;
+			}
+		}
 
 		.bg1 {
 			background-image: url("/img/bg1.jpg");

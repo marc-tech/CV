@@ -43,8 +43,12 @@
 
 <style lang="scss">
     .experience-card {
-        padding: 40px;
-        background: rgba(255, 255, 255, 0.7);
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.9);
         width: 100%;
+
+        @media (max-width: 800px) {
+            padding: 15px 7px;
+        }
     }
 </style>
