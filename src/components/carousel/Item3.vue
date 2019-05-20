@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="experience-card">
         <div class="m-auto">
             <h2 style="text-decoration: underline" class="mb-4 text-center"><strong>Experience</strong></h2>
             <div class="row justify-content-center date-list">
@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-8 col-sm-12 description">
                     <p>
-                        I work as a freelance fullstack developer.
+                        I worked on different web project and application as a freelancer, I am extremely versatile and adapts quickly to the requests of my customers to provide a tailor-made solution that meets 100% of their needs
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-12 date text-center">
@@ -42,5 +42,9 @@
 </script>
 
 <style lang="scss">
-
+    .experience-card {
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.7);
+        width: 100%;
+    }
 </style>

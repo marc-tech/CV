@@ -1,7 +1,7 @@
 <template>
-    <div class="card">
+    <div class="skills-card">
         <div class="text-center m-auto">
-            <h2 style="text-decoration: underline" class="mb-4"><strong>Skills</strong></h2>
+            <h2 class="mb-4"><strong>Skills</strong></h2>
             <div class="row">
                 <div class="col-md-12 col-lg-6">
                     <div class="row">
@@ -80,7 +80,7 @@
                             <h4>Ruby</h4>
                         </div>
                         <div class="col-6">
-                            <VueStarRating :increment="increment" :rating="3" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
+                            <VueStarRating :increment="increment" :rating="1.5" :read-only="readOnly" :show-rating="showRating" :star-size="starSize"/>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,17 @@
 </script>
 
 <style lang="scss">
-    .vue-star-rating {
-        justify-content: center;
+    .skills-card {
+        padding: 40px;
+        background: rgba(193, 198, 255, 0.7);
+        width: 100%;
+
+        h4 {
+            font-weight: 700;
+        }
+
+        .vue-star-rating {
+            justify-content: center;
+        }
     }
 </style>
